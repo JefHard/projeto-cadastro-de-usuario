@@ -28,6 +28,7 @@ const inputEmail = useRef()
 
   async function deleteUsers(id) {
     await api.delete(`/usuarios/${id}`)
+    getUsers()
   }
 
   useEffect(() => {
